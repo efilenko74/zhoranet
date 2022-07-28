@@ -1,0 +1,27 @@
+p {
+	font-size: 18px;
+	font-family: Times, "Times New Roman", serif;
+	color: #ffffff;
+}
+body {
+	background: linear-gradient(70deg, rgb(10,0,60), rgb(60,0,10));
+}
+input {
+	background-color: rgb(100, 100, 100);
+	color: rgb(10, 10, 10);
+	width: 60px;
+	border-radius: 5px;
+	border-color: black;
+}
+select {
+	background-color: rgb(100, 100, 100);
+	color: rgb(10, 10, 10);
+	border-radius: 5px;
+	border-color: black;
+}
+button {
+	background-color: rgb(100, 100, 100);
+	color: rgb(10, 10, 10);
+	border-radius: 20px;
+	border-color: black;
+}
