@@ -1,0 +1,36 @@
+
+select {
+	background: #FFF;
+	width: 400px;
+	border: 1px solid silver;
+}
+
+body {
+	background: #F9FAF6;
+	margin: 0px;
+	padding: 0px;
+	color: #000000;
+	font-family: verdana,sans-serif;
+	font-size: 10px;
+}
+
+textarea {
+	font-family: verdana,arial,sans-serif;
+	border: 1px solid silver;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #018C01;
+}
+
+#bobody {
+	border: 1px solid silver;
+	background: #ffffff;
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+	width:60%;
+	padding: 20px 20px 20px 20px;
+}
