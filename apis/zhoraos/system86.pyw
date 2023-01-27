@@ -22,6 +22,9 @@ def sysoff():
 def lock():
 	os.startfile(r'ZhoraOS.pyw')
 	window.destroy()
+def apdeyter():
+	os.startfile(r'updater.py')
+	window.destroy()
 
 def bgbtn():
 	a.pack()
@@ -141,9 +144,8 @@ def opensysapp5():
 	os.startfile(r'ttt.pyw')
 
 window=tkinter.Tk()
-window.geometry('1200x600')
 window.resizable(width=False, height=False)
-window.title('ZhoraOS V6.0')
+window.title('ZhoraOS V2')
 backk=db.get("bg")
 window['bg']=backk
 
@@ -159,6 +161,7 @@ setweb=tk.Button(window, text='Настроить ⚙', command=setupweb , heigh
 poffsys=tk.Button(window, text='Выключение SYSTEM', bg='red', height=2, width=20, fg='white', command=sysoff)
 poff=tk.Button(window, text='Выключение', bg='red', height=2, width=20, fg='white', command=off)
 lock=tk.Button(window, text='Заблокировать', command=lock, bg='red', height=2, width=20, fg='white')
+updater=tk.Button(window, text='Центр обновлений', bg='blue', fg='white', command=apdeyter, height=2, width=20)
 
 txt1=tk.Label(window, text='Ссылки на веб-сайты:')
 
@@ -203,42 +206,43 @@ sysapp5=tk.Button(window, command=opensysapp5, bg='white', height=1, width=13, t
 
 bg.pack()
 
-opn1.place(x=1075, y=20)
-opn2.place(x=1075, y=50)
-opn3.place(x=1075, y=80)
+opn1.place(x=1246, y=20)
+opn2.place(x=1246, y=50)
+opn3.place(x=1246, y=80)
 
-setopn1.place(x=1170, y=20)
-setopn2.place(x=1170, y=50)
-setopn3.place(x=1170, y=80)
+setopn1.place(x=1342, y=20)
+setopn2.place(x=1342, y=50)
+setopn3.place(x=1342, y=80)
 
 setpin.place(x=150, y=80)
 
-web1.place(x=0, y=574)
-web2.place(x=96,y=574)
-web3.place(x=192, y=574)
-web4.place(x=288, y=574)
+web1.place(x=0, y=742)
+web2.place(x=96,y=742)
+web3.place(x=192, y=742)
+web4.place(x=288, y=742)
 
-setweb.place(x=288, y=545)
+setweb.place(x=288, y=715)
 
 poff.place(x=0, y=0)
 poffsys.place(x=0, y=40)
 lock.place(x=0, y=80)
+updater.place(x=0, y=121)
 
-txt2.place(x=1070, y=0)
-txt1.place(x=0, y=553)
+txt2.place(x=1235, y=0)
+txt1.place(x=0, y=720)
 
-sysapp1.place(x=1108, y=552)
-sysapp2.place(x=1108, y=525)
-sysapp3.place(x=1108, y=498)
-sysapp4.place(x=1108, y=471)
-sysapp5.place(x=1108, y=444)
+sysapp1.place(x=1265, y=720)
+sysapp2.place(x=1265, y=693)
+sysapp3.place(x=1265, y=666)
+sysapp4.place(x=1265, y=639)
+sysapp5.place(x=1265, y=612)
 
 def tick():
 	watch.after(1000, tick)
 	watch['text']=time.strftime('%H:%M:%S')
 
 watch=tk.Label(window, font="Arial 10", bg='black', fg='white')
-watch.place(x=1144, y=578)
+watch.place(x=1310, y=747)
 tick()
 
 db.dump()

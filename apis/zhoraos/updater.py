@@ -1,12 +1,14 @@
 import requests
 import urllib.request
+import os
 
 a=requests.get('https://efilenko74.github.io/zhoranet/apis/zhoraos/version.txt').text
 
-if int(a)==1:
+if int(a)==2:
 	print('Установлена актуальная версия, обновление не требуется')
 	print('для выхода нажмите Enter...')
 	input()
+	os.startfile(r'system86.pyw')
 else:
 	print('Доступна новая версия, если хотите установить введите "y", если нет "n"')
 	var=input(': ')
@@ -49,5 +51,6 @@ else:
 		urllib.request.urlretrieve(url, destination)
 		print('Файлы загружены, обновление успешно, для выхода нажмите Enter...')
 		input()
+		os.startfile(r'system86.pyw')
 	else:
 		print('exit')
